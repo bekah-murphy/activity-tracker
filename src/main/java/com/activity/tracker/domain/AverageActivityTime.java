@@ -5,20 +5,20 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AverageActivityTime {
 
-    public AverageActivityTime(Action action, Integer avg) {
+    public AverageActivityTime(String action, Integer avg) {
         this.action = action;
         this.avg = avg;
     }
 
-    private Action action;
+    private String action;
 
     private Integer avg;
 
-    public Action getAction() {
+    public String getAction() {
         return action;
     }
 
-    public void setAction(Action action) {
+    public void setAction(String action) {
         this.action = action;
     }
 

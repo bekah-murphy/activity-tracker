@@ -79,14 +79,14 @@ public class ActivityService {
         Set<Action> actions = EnumSet.allOf(Action.class);
 
         for (Action action : actions) {
-            averageActivityTimes.add(new AverageActivityTime(action, (int) Math.round(getInternalAverage(action).getValue())));
+            averageActivityTimes.add(new AverageActivityTime(action.toString(), (int) Math.round(getInternalAverage(action).getValue())));
         }
 
         return averageActivityTimes;
     }
 
     private InternalAvg getInternalAverage(Action action) {
-        Aggregations aggregations = elasticsearchTemplate.query(buildSearchQuery(action.name()), SearchResponse::getAggregations);
+        Aggregations aggregations = elasticsearchTemplate.query(buildSearchQuery(action.toString()), SearchResponse::getAggregations);
         logger.debug("Activity Service: Action {} Average {}", action, aggregations.get(ACTIVITY_AVERAGE_KEY));
         return aggregations.get(ACTIVITY_AVERAGE_KEY);
 

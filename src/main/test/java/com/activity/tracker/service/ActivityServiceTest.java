@@ -61,8 +61,8 @@ public class ActivityServiceTest {
 
     public static List<AverageActivityTime> getExpectedAverageForEachAction() {
         List<AverageActivityTime> averageActivityTimes = new ArrayList<>();
-        averageActivityTimes.add(new AverageActivityTime(Action.HOP, 25));
-        averageActivityTimes.add(new AverageActivityTime(Action.JUMP, 200));
+        averageActivityTimes.add(new AverageActivityTime(Action.HOP.toString(), 25));
+        averageActivityTimes.add(new AverageActivityTime(Action.JUMP.toString(), 200));
         return averageActivityTimes;
     }
 }

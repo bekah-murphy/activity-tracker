@@ -61,15 +61,15 @@ Get Activity Statistics Response:
     
     [
       {
-        "action": "JUMP",
+        "action": "jump",
         "avg": 500
       },
       {
-        "action": "RUN",
+        "action": "run",
         "avg": 375
       },
       {
-        "action": "HOP",
+        "action": "hop",
         "avg": 0
       }
     ]    
