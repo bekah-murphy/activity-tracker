@@ -24,13 +24,14 @@ this ID to receive updates until the search is complete.
 
 ## Steps:
 
-### Run docker compose from file
+- Start elasticsearch in Docker container
+
 
     docker-compose up
     
-### Start the activity tracking service spring boot application by running the main class in ActivitySpringBootApplication
+- Start the activity tracking service spring boot application by running the main class in ActivitySpringBootApplication
 
-### Execute an HTTP Request to Activity Service. Please reference api.http and execute the desired curl commands to test the local environment.
+- Execute an HTTP Request to Activity Service. Please reference api.http and execute the desired curl commands to test the local environment.
 
 Create Activity Request:
 
@@ -38,7 +39,8 @@ Create Activity Request:
     Host: localhost:8089
     Content-Type: application/json
 
-{ "action": "run", "time": 250}
+    { "action": "run", "time": 250}
+    
 Create Activity Response:
     
     HTTP/1.1 202 
