@@ -1,4 +1,4 @@
-package test.java.com.activity.tracker.service;
+package com.activity.tracker.service;
 
 import static org.junit.Assert.assertEquals;
 

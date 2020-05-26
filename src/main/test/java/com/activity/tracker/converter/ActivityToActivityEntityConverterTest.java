@@ -1,4 +1,4 @@
-package test.java.com.activity.tracker.converter;
+package com.activity.tracker.converter;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
