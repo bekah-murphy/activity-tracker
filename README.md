@@ -1,6 +1,6 @@
 # Activity Tracker Application
 
-The activity tracker application is a SpringBoot application that logs the time spent on an activity action such as jumping, running, and hopping.
+The Activity Tracker Application is a Spring Boot application that logs the time spent on an activity action such as jumping, running, and hopping.
 After an action is logged the service can return statistics on a given action, such as the average time
 spent performing a given action.
 
@@ -85,3 +85,5 @@ it gets a response code alerting the client the message has succeeded, or has fa
 each action?
 - Caching can be utilized in future implementations to save the most recent statistics
 - Circuit breakers is also in back of mind for this project
+- It was a stretch goal for the developer of this project to use Elasticsearch for the first time.
+Please make a PR or leave a comment to start a discussion on what improvements may be heplful moving forward.
